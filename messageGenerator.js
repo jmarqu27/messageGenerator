@@ -1,3 +1,6 @@
+/*
+This program outputs a random dad joke each time it is run.
+*/
 
 let joke0 = "I'm afraid for the calendar. Its days are numbered.";
 let joke1 = "What do you call a fish wearing a bowtie? Sofishticated.";
@@ -10,38 +13,47 @@ let joke7 = "Dad, did you get a haircut? No, I got them all cut!";
 let joke8 = "What do you call a poor Santa Claus? St. Nickel-less.";
 let joke9 = "How do you get a squirrel to like you? Act like a nut.";
 
-let randomJoke = Math.floor(Math.random() * 9);
+//Return a random number 0 through 9
+const getRandomNumber = () => {
+    return Math.floor(Math.random() * 9);
+};
 
-switch(randomJoke) {
-    case 0:
-        console.log(joke0);
-        break;
-    case 1:
-        console.log(joke1);
-        break;
-    case 2:
-        console.log(joke2);
-        break;
-    case 3:
-        console.log(joke3);
-        break;
-    case 4:
-        console.log(joke4);
-        break;
-    case 5:
-        console.log(joke5);
-        break;
-    case 6:
-        console.log(joke6);
-        break;
-    case 7:
-        console.log(joke7);
-        break;
-    case 8:
-        console.log(joke8);
-        break;
-    case 9:
-        console.log(joke9);
-        break;
+
+//Output joke depending on getRandomNumber function return
+const getRandomJoke = () => {
+    
+    switch(getRandomNumber()) {
+        case 0:
+            console.log(joke0);
+            break;
+        case 1:
+            console.log(joke1);
+            break;
+        case 2:
+            console.log(joke2);
+            break;
+        case 3:
+            console.log(joke3);
+            break;
+        case 4:
+            console.log(joke4);
+            break;
+        case 5:
+            console.log(joke5);
+            break;
+        case 6:
+            console.log(joke6);
+            break;
+        case 7:
+            console.log(joke7);
+            break;
+        case 8:
+            console.log(joke8);
+            break;
+        case 9:
+            console.log(joke9);
+            break;
+    };
 }
 
+getRandomJoke();
