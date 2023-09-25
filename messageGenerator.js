@@ -1,5 +1,7 @@
 /*
-This program outputs a random dad joke each time it is run.
+This program outputs a random dad joke to the console each time it is run.
+When run with index.html, the 'Generate' button outputs the random dad joke
+to the console each time it is clicked.
 */
 
 let joke0 = "I'm afraid for the calendar. Its days are numbered.";
@@ -21,37 +23,46 @@ const getRandomNumber = () => {
 
 //Output joke depending on getRandomNumber function return
 const getRandomJoke = () => {
-    
     switch(getRandomNumber()) {
         case 0:
             console.log(joke0);
+            return joke0;
             break;
         case 1:
             console.log(joke1);
+            return joke1;
             break;
         case 2:
             console.log(joke2);
+            return joke2;
             break;
         case 3:
             console.log(joke3);
+            return joke3;
             break;
         case 4:
             console.log(joke4);
+            return joke4;
             break;
         case 5:
             console.log(joke5);
+            return joke5;
             break;
         case 6:
             console.log(joke6);
+            return joke6;
             break;
         case 7:
             console.log(joke7);
+            return joke7;
             break;
         case 8:
             console.log(joke8);
+            return joke8;
             break;
         case 9:
             console.log(joke9);
+            return joke9;
             break;
     };
 }
